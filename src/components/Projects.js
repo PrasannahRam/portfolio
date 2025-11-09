@@ -1,9 +1,12 @@
 import React from 'react'
 import './Style.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+
 
 function Projects() {
   const projects = [
-    { title: "Project One", description: "A cool web app I built.", link: "#" },
+    { title: "Whatsapp export chat Viewer", description: "A cool mobile app I built that can read WhatsApp exported chat files and display them in a clean interface that closely replicates the original WhatsApp chat view.", link: "#" },
     { title: "Project Two", description: "Another awesome project.", link: "#" },
   ];
   return (
@@ -14,11 +17,14 @@ function Projects() {
           <div key={index} className="project-card">
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <a href={project.link}>View Project</a>
+            <Link to={`/Wb_viewer`}>View Project</Link>
           </div>
         ))}
       </div>
+      
     </section>
+
+    
   )
 }
 
