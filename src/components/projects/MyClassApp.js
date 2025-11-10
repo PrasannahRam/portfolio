@@ -29,7 +29,7 @@ export default function MyClassApp() {
         <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" ,backgroundColor:"#cac8ffff" }}>
         <h1 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>{project.title}</h1>
       </div>
-      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif", background: "#E7E6FF" }}>
+      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif", background: "#E7E6FF",paddingTop:0 }}>
       
 
        <section style={{ marginBottom: "2px" ,paddingBottom:"0px"}}>
