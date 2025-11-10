@@ -52,7 +52,11 @@ body {
 /* Navbar */
 .navbar {
   position: fixed;
+  /* max-width: 900px; */
   top: 0;
+  left: 0;
+  height: 100;
+  align-self: center;
   width: 100%;
   background-color: #1a1a1a;
   color: #fff;
@@ -166,5 +170,6 @@ section h2 {
   padding: 20px 0;
   background-color: #1a1a1a;
   color: #fff;
-  margin-top: 40px;
+  width: 100%;
+  position:relative;
 }

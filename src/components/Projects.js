@@ -11,9 +11,16 @@ function Projects() {
       title: "Online Exam Results Portal",
       description: "A web application that allows students to instantly check their exam results by entering their index number. It fetches data from a SQL database and displays detailed subject-wise marks and overall grades in a clean, user-friendly interface.",
       link: "#"  
-    }
+    },
+    {
+  name: 'MyClassApp',
+  title: "Teacher's Class Management App",
+  description: "An intuitive mobile app for teachers to track student attendance, manage payments, and organize individual student details with ease.",
+  link: "#"
+}
+
+
     ,
-    { name:'CEU_site',title: "Project Two", description: "Another awesome project.", link: "#" },
   ];
   return (
     <section id="projects" className="projects">

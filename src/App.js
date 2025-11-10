@@ -11,10 +11,11 @@ import Home from './components/Home';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Wb_viewer from './components/projects/Wb_viewer';
 import CEU_site from './components/projects/CEU_site';
+import MyClassApp from './components/projects/MyClassApp';
 
 export default function App() {
   return (
-    <div>
+    <div style={{background:'#1a1a1a'}}>
       <Router>
         
 
@@ -25,6 +26,7 @@ export default function App() {
       <Routes>
         <Route path="/Wb_viewer" element={<Wb_viewer />} />
         <Route path="/CEU_site" element={<CEU_site />} />
+        <Route path="/MyClassApp" element={<MyClassApp />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
