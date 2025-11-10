@@ -28,20 +28,20 @@ export default function ProjectPage() {
   
 
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" }}>
+    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" ,background:"#E7E6FF"}}>
       <h1 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>{project.title}</h1>
 
-      <section style={{ marginBottom: "20px" }}>
+      <section style={{ marginBottom: "2px" ,paddingBottom:"0px"}}>
         <h2 style={{ fontSize: "1.5rem", marginBottom: "10px" }}>{projectData.descriptionLabel}</h2>
         <p>{project.description}</p>
       </section>
 
-      <section style={{ marginBottom: "20px" }}>
+      <section style={{ marginBottom: "20px",paddingBottom:"0px" }}>
         <h2 style={{ fontSize: "1.5rem", marginBottom: "10px" }}>{projectData.detailsLabel}</h2>
         <p>{project.details}</p>
       </section>
 
-      <section style={{ marginBottom: "20px" }}>
+      <section style={{ marginBottom: "20px" ,paddingBottom:"0px"}}>
         <h2 style={{ fontSize: "1.5rem", marginBottom: "10px" }}>{projectData.technologiesLabel}</h2>
         <ul>
           {project.technologies.map((tech, index) => (
@@ -52,13 +52,13 @@ export default function ProjectPage() {
 
       <section style={{ marginBottom: "20px" }}>
         <h2 style={{ fontSize: "1.5rem", marginBottom: "10px" }}>{projectData.screenshotsLabel}</h2>
-        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: "10px",flexWrap:"wrap",alignItems:"center"}}>
           {project.screenshots.map((src, index) => (
             <img 
               key={index} 
               src={src}
               alt={`${index + 1}`} 
-              style={{ width: "250px", borderRadius: "8px", boxShadow: "0 0 10px rgba(0,0,0,0.1)" }}
+              style={{ width: "150px", borderRadius: "8px", boxShadow: "0 0 10px rgba(0,0,0,0.1)" }}
             />
           ))}
         </div>
