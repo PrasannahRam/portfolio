@@ -9,8 +9,6 @@ export default function App() {
   return (
     <div style={{background:'#1a1a1a'}}>
       <Router>
-        
-
       <nav>
         <Link to="/"></Link>
       </nav>
