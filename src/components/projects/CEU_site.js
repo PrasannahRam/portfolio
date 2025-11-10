@@ -31,8 +31,12 @@ export default function CEU_site() {
   };
 
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif", background: "#E7E6FF" }}>
-      <h1 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>{project.title}</h1>
+    <div>
+        <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" ,backgroundColor:"#cac8ffff" }}>
+        <h1 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>{project.title}</h1>
+      </div>
+        <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif", background: "#E7E6FF" }}>
+     
 
       <section style={{ marginBottom: "20px",paddingBottom:"0px" }}>
         <h2 style={{ fontSize: "1.5rem", marginBottom: "10px" }}>{projectData.descriptionLabel}</h2>
@@ -71,7 +75,7 @@ export default function CEU_site() {
               key={index}
               src={src}
               alt={`Screenshot ${index + 1}`}
-              style={{ width: "350px", borderRadius: "8px", boxShadow: "0 0 10px rgba(0,0,0,0.1)" }}
+              style={{ width: "310px", borderRadius: "8px", boxShadow: "0 0 10px rgba(0,0,0,0.1)" }}
             />
           ))}
         </div>
@@ -84,6 +88,7 @@ export default function CEU_site() {
       <div style={{ marginTop: "30px" }}>
         <Link to="/" style={{ textDecoration: "none", color: "#007bff" }}>← Back to Home</Link>
       </div>
+    </div>
     </div>
   );
 }

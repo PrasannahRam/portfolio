@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Wbviewer from './components/projects/Wb_viewer';
 import CEUsite from './components/projects/CEU_site';
 import MyClassApp from './components/projects/MyClassApp';
+import ScrollToTop from './components/Scrolltotop';
 
 export default function App() {
   return (
     <div style={{background:'#1a1a1a'}}>
       <Router>
+      <ScrollToTop></ScrollToTop>
       <nav>
         <Link to="/"></Link>
       </nav>

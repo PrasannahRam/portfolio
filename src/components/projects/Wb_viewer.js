@@ -29,7 +29,7 @@ export default function ProjectPage() {
 
   return (
     <div>
-      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" ,backgroundColor:"#cac8ffff"}}>
+      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" ,backgroundColor:"#cac8ffff" }}>
         <h1 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>{project.title}</h1>
       </div>
       
