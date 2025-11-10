@@ -28,8 +28,13 @@ export default function ProjectPage() {
   
 
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" ,background:"#E7E6FF"}}>
-      <h1 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>{project.title}</h1>
+    <div>
+      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" ,backgroundColor:"#cac8ffff"}}>
+        <h1 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>{project.title}</h1>
+      </div>
+      
+      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" ,background:"#E7E6FF",paddingTop:0}}>
+      
 
       <section style={{ marginBottom: "2px" ,paddingBottom:"0px"}}>
         <h2 style={{ fontSize: "1.5rem", marginBottom: "10px" }}>{projectData.descriptionLabel}</h2>
@@ -72,5 +77,7 @@ export default function ProjectPage() {
         <Link to="/" style={{ textDecoration: "none", color: "#007bff" }}>← Back to Home</Link>
       </div>
     </div>
+    </div>
+    
   );
 }
